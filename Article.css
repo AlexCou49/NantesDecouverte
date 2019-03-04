@@ -1,7 +1,5 @@
 img {
     max-width: 1000px;
-    
-
 }
 
 h3{
@@ -9,13 +7,33 @@ h3{
     
 }
 
+
 p{
    text-align: center; 
+   font-size: 25px;
 }
 
 .carroussel{
     text-align: center;
     
+}
+
+.E{
+    font-size: 100px;
+    float: left;
+    font-style: italic;
+
+}
+.media{
+
+    width: 150px;
+    height: 150px;
+    
+}
+
+.container{
+    
+    flex-direction: row;
 }
 
 
