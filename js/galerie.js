@@ -27,35 +27,39 @@ fetch('../img/')
             };
         });
     })
+    .then(() => {
+        console.log(images);
+        generateGallery();
+    })
     .catch(err => {
         console.log('fetch error', err);
     });
 
-console.log(images);
-
 
 // GENERATES GALLERY //
 
-images.forEach(image => {
-    let div = document.createElement('div');
-    div.classList += 'img-wrap mx-2 my-2';
-    let img = `<img class='img-fluid photo' id='${image}' src='../img/${image}'>`;
-    div.innerHTML = img;
-    photos.appendChild(div);
-});
-
-
-//  CREATES MODAL //
-
-let galerie = document.querySelectorAll('.photo');
-
-galerie.forEach(image => {
-    image.addEventListener('click', () => {
-        modal.style.display = 'block';
-        modalImg.src = `../img/${image.id}`;
+function generateGallery() {
+    images.forEach(image => {
+        let div = document.createElement('div');
+        div.classList += 'img-wrap mx-2 my-2';
+        let img = `<img class='img-fluid photo' id='${image}' src='../img/${image}'>`;
+        div.innerHTML = img;
+        photos.appendChild(div);
     });
-});
-
-span.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
+    
+    
+    //  CREATES MODAL //
+    
+    let galerie = document.querySelectorAll('.photo');
+    
+    galerie.forEach(image => {
+        image.addEventListener('click', () => {
+            modal.style.display = 'block';
+            modalImg.src = `../img/${image.id}`;
+        });
+    });
+    
+    span.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}
