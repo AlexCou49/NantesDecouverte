@@ -42,7 +42,7 @@ function generateGallery() {
     images.forEach(image => {
         let div = document.createElement('div');
         div.classList += 'img-wrap mx-2 my-2';
-        let img = `<img class='img-fluid photo' id='${image}' src='../img/${image}'>`;
+        let img = `<img class='img-fluid photo' id='${image}' src='./img/${image}'>`;
         div.innerHTML = img;
         photos.appendChild(div);
     });
@@ -55,7 +55,7 @@ function generateGallery() {
     galerie.forEach(image => {
         image.addEventListener('click', () => {
             modal.style.display = 'block';
-            modalImg.src = `../img/${image.id}`;
+            modalImg.src = `./img/${image.id}`;
         });
     });
     
