@@ -4,8 +4,8 @@ let photos = document.getElementById("photos");
 
 images.forEach((image) => {
     let div = document.createElement("div");
-    let card = `<div class="card my-2" style="width: 18rem;"><img class="card-img-top" style="background-size: cover;" src="../img/${image}"></div>`;
+    div.classList += "img-wrap mx-1 my-1";
+    let card = `<img class="img-fluid photo" src="../img/${image}">`;
     div.innerHTML = card;
     photos.appendChild(div);
 });
-

@@ -63,11 +63,44 @@ section .section-title {
     font-weight: 700;
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
 	#footer h5 {
     padding-left: 0;
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
+    }
 }
+
+.img-wrap {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
 }
+
+.photo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* .photo::after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+    background-size: cover;
+} */
