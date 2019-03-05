@@ -81,12 +81,18 @@ section .section-title {
     overflow: hidden;
     margin: 0;
     background: black;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: all .3s ease-in-out;
+}
+
+.img-wrap:hover {
+    box-shadow: 0px 5px 40px 2px rgba(0, 0, 0, .4);
 }
 
 .photo {
     display: block;
     position: absolute;
-    opacity: .6;
+    opacity: .65;
     top: 50%;
     left: 50%;
     min-height: 100%;
@@ -114,14 +120,14 @@ section .section-title {
     background-color: rgba(0,0,0,0.9);
   }
   
-  .modal-content {
+.modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-  }
+}
 
-  .close {
+.close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -129,17 +135,17 @@ section .section-title {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-  @media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
     }
-  }
+}
