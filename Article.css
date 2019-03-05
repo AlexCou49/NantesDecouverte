@@ -1,17 +1,10 @@
 img {
     max-width: 1000px;
-}
-
-img:hover{
-    
-    opacity: 0.6;
-    color: black;
-
+    border-radius: 20px 20px 20px 20px;
 }
 
 h3{
     text-align: center;
-    
 }
 
 
@@ -37,6 +30,10 @@ p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+   
+    border-radius: 10px 10px 10px 10px ;
+    padding: 15px;
+    margin: 25px
 }
 
 
@@ -44,6 +41,13 @@ p{
     height: 90px;
     width: 90px;
 }
+
+.contact{
+    display:flex;
+    background-color:#e6e6e6;
+    
+}
+
 
 
 
