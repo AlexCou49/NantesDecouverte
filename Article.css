@@ -2,6 +2,13 @@ img {
     max-width: 1000px;
 }
 
+img:hover{
+    
+    opacity: 0.6;
+    color: black;
+
+}
+
 h3{
     text-align: center;
     
@@ -24,17 +31,24 @@ p{
     font-style: italic;
 
 }
-.media{
-
-    width: 150px;
-    height: 150px;
-    
-}
 
 .container{
     
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+
+.rounded-circle{
+    height: 90px;
+    width: 90px;
+}
+
+
+
+
+
 
 
 
