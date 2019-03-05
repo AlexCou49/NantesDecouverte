@@ -1,5 +1,5 @@
 // let images = ['bateau.jpg', 'batiment.jpg', 'carroussel.jpg', 'chevaux.jpg', 'dragon.jpg', 'ile_de_nantes.jpg', 'roue.jpg', 'spider.jpg', 'tulipe.jpg'];
-
+let url = "https://dhmjulien.github.io/NantesDecouverte/"
 let images = [];
 
 let modal = document.getElementById('modal');
@@ -11,7 +11,7 @@ let span = document.getElementsByClassName('close')[0];
 
 // FETCH //
 
-fetch('../img/')
+fetch(`${url}img/`)
     .then(res => {
         return res.text();
     })
