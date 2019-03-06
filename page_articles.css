@@ -1,0 +1,9 @@
+a, a:hover, a:focus {
+  text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+  #fixed {
+    display: none;
+  }
+}
