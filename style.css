@@ -1,22 +1,36 @@
-section {
-    padding: 60px 0;
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.navbar {
+    background: rgba(63, 195, 128, 1)!important;
 }
 
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
+.carousel-item {
+    max-height: 93.9vh;
+    letter-spacing: 0.25rem;
+  }
+.carousel-item  img {
+    margin: 0 auto;
+    background-size: cover;
 }
+.center-block{
+   
+    float: right;
+}
+
+footer {
+    padding-top: 10px;
+}
+
 #footer {
-    background: #007b5e !important;
+    background: rgba(63, 195, 128, 1) !important;
 }
 #footer h5{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
     padding-bottom: 6px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     color:#ffffff;
+    margin-top: .5rem!important;
 }
 #footer a {
     color: #ffffff;
@@ -25,6 +39,7 @@ section .section-title {
     -webkit-text-decoration-skip: objects;
 }
 #footer ul.social li{
+    margin-top: 0.85rem;
 	padding: 3px 0;
 }
 #footer ul.social li a i {
@@ -32,7 +47,8 @@ section .section-title {
 	font-size:25px;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
-	transition: .5s all ease;
+    transition: .5s all ease;
+    
 }
 #footer ul.social li:hover a i {
 	font-size:30px;
@@ -49,7 +65,8 @@ section .section-title {
 	padding: 3px 0;
 	-webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
-	transition: .5s all ease;
+    transition: .5s all ease;
+    margin-bottom: 0;
 }
 #footer ul.quick-links li:hover{
 	padding: 3px 0;
@@ -63,13 +80,37 @@ section .section-title {
     font-weight: 700;
 }
 
+.quick-links {
+    margin-bottom: 0.5rem;
+}
+
+
 @media (max-width:767px) {
 	#footer h5 {
     padding-left: 0;
     border-left: transparent;
     padding-bottom: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     }
+    .img-chateau1{
+    display:none;
+    }
+    .img-chateau2{
+    display: block;
+    }
+    .img-elephant1{
+    display:none;
+    }
+    .img-elephant2{
+    display: block;
+    }
+    .img-pommeraye1{
+    display:none;
+    }
+    .img-pommeraye2{
+    display: block;
+    }
+    
 }
 
 /* GALLERY */
