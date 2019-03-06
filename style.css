@@ -1,13 +1,22 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .navbar {
-    background: rgba(63, 195, 128, 1)!important;
+    background: #f7f7f7 !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
 }
 
 .carousel-item {
     max-height: 93.9vh;
     letter-spacing: 0.25rem;
-  }
+}
 .carousel-item  img {
     margin: 0 auto;
     background-size: cover;
@@ -16,26 +25,26 @@
    
     float: right;
 }
-
-footer {
-    padding-top: 10px;
+#galerie {
+    min-height: 93.9vh;
 }
 
 #footer {
-    background: rgba(63, 195, 128, 1) !important;
+    padding-top: 10px;
+    background: #f7f7f7 !important;
 }
 #footer h5{
 	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
+    border-left: 3px solid #222;
     padding-bottom: 6px;
     margin-top: 20px;
-    color:#ffffff;
     margin-top: .5rem!important;
+    color: #222 !important;
 }
 #footer a {
-    color: #ffffff;
     text-decoration: none !important;
     background-color: transparent;
+    color: #222 !important;
     -webkit-text-decoration-skip: objects;
 }
 #footer ul.social li{
@@ -56,10 +65,10 @@ footer {
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
-	color:#ffffff;
+	color: #222 !important;
 }
 #footer ul.social li a:hover{
-	color:#eeeeee;
+	color: #222 !important;
 }
 #footer ul.quick-links li{
 	padding: 3px 0;
@@ -85,33 +94,6 @@ footer {
 }
 
 
-@media (max-width:767px) {
-	#footer h5 {
-    padding-left: 0;
-    border-left: transparent;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    }
-    .img-chateau1{
-    display:none;
-    }
-    .img-chateau2{
-    display: block;
-    }
-    .img-elephant1{
-    display:none;
-    }
-    .img-elephant2{
-    display: block;
-    }
-    .img-pommeraye1{
-    display:none;
-    }
-    .img-pommeraye2{
-    display: block;
-    }
-    
-}
 
 /* GALLERY */
 .img-wrap {
@@ -185,8 +167,111 @@ footer {
     cursor: pointer;
 }
 
+.titre {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contenu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.image-wrapper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+.image {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
     }
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .img-chateau1{
+        display:none;
+    }
+    .img-chateau2{
+        display: block;
+    }
+    .img-elephant1{
+        display:none;
+    }
+    .img-elephant2{
+        display: block;
+    }
+    .img-pommeraye1{
+        display:none;
+    }
+    .img-pommeraye2{
+        display: block;
+    }
 }
+
+#contacts {
+    letter-spacing: 2px;
+    min-height: 93.9vh; 
+    }
+  #contacts a{
+    color: #222;
+    text-decoration: none;
+  }
+
+  .formulaire-map, .formulaire-contact{
+    margin-top:5rem;
+  }
+  
+  @media (max-width: 575.98px) {
+  
+    #contacts{padding-bottom: 4.5rem;}
+    #contacts .maps .map{
+      width: 100%;
+      height: 450px;
+    }
+   }
+    
+  @media (min-width: 576px) {
+  
+     #contacts{padding-bottom: 4.5rem;}
+  
+     #contacts .maps .map{
+       width: 100%;
+       height: 450px;
+     }
+   }
+  
+  @media (min-width: 768px) {
+  
+    #contacts{padding-bottom:4.5rem;}
+  
+    #contacts .maps .map{
+      width: 100%;
+      height: 850px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #contacts{padding-bottom: 4.5rem;}
+  
+     #contacts .maps .map{
+       width: 100%;
+       height: 700px;
+     }
+  }
+  
