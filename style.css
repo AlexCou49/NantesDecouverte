@@ -10,6 +10,7 @@
 }
 
 .navbar-brand {
+    letter-spacing: -1px;
     font-weight: 700;
 }
 
@@ -275,3 +276,33 @@
      }
   }
   
+  .article p {
+    color: #222;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.first-p::first-letter {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 4rem;
+    padding-right:0.05em;
+    color: #000;
+}
+
+.profile-picture {
+    width: 115px;
+    height: 115px;
+    border-radius: 115px;
+}
+
+.media-object {
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.titre-article {
+    font-weight: 700;
+    font-size: 4rem;
+}
