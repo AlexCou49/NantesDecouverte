@@ -1,7 +1,6 @@
-let images = ['bateau.jpg', 'batiment.jpg', 'carroussel.jpg', 'chevaux.jpg', 'dragon.jpg', 'ile_de_nantes.jpg', 'roue.jpg', 'spider.jpg', 'tulipe.jpg'];
+// let images = ['bateau.jpg', 'batiment.jpg', 'carroussel.jpg', 'chevaux.jpg', 'dragon.jpg', 'ile_de_nantes.jpg', 'roue.jpg', 'spider.jpg', 'tulipe.jpg'];
 
-// let url = "https://dhmjulien.github.io/NantesDecouverte/"
-// let images = [];
+let images = [];
 
 let modal = document.getElementById('modal');
 let photos = document.getElementById('photos');
@@ -12,28 +11,28 @@ let span = document.getElementsByClassName('close')[0];
 
 // FETCH //
 
-// fetch(`${url}img/`)
-//     .then(res => {
-//         return res.text();
-//     })
-//     .then(html => {
-//         let parser = new DOMParser();
-//         let doc = parser.parseFromString(html, 'text/html');
-//         let a = doc.querySelectorAll('a');
-//         a.forEach(image => {
-//             if (image.href.includes('.jpg') || image.href.includes('.png')) {
-//                 let linkArray = image.href.split('/');
-//                 let link = linkArray[(linkArray.length) - 1];
-//                 images.push(link);
-//             };
-//         });
-//     })
-//     .then(() => {
-//         generateGallery();
-//     })
-//     .catch(err => {
-//         console.log('fetch error', err);
-//     });
+fetch('./img/gallery/')
+    .then(res => {
+        return res.text();
+    })
+    .then(html => {
+        let parser = new DOMParser();
+        let doc = parser.parseFromString(html, 'text/html');
+        let a = doc.querySelectorAll('a');
+        a.forEach(image => {
+            if (image.href.includes('.jpg') || image.href.includes('.png')) {
+                let linkArray = image.href.split('/');
+                let link = linkArray[(linkArray.length) - 1];
+                images.push(link);
+            };
+        });
+    })
+    .then(() => {
+        generateGallery();
+    })
+    .catch(err => {
+        console.log('fetch error', err);
+    });
 
 
 // GENERATES GALLERY //
