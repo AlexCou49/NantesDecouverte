@@ -1,5 +1,3 @@
-// let images = ['bateau.jpg', 'batiment.jpg', 'carroussel.jpg', 'chevaux.jpg', 'dragon.jpg', 'ile_de_nantes.jpg', 'roue.jpg', 'spider.jpg', 'tulipe.jpg'];
-
 let images = [];
 
 let modal = document.getElementById('modal');
