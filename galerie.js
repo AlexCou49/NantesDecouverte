@@ -60,5 +60,3 @@ function generateGallery() {
         modal.style.display = 'none';
     });
 }
-
-generateGallery();
